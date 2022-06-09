@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\OrderRequest;
+use App\Interfaces\InterestPaymentsInterface;
 use App\Models\Order;
 
 class OrderController extends Controller
@@ -12,6 +13,14 @@ class OrderController extends Controller
         return response()->json([
             'message' => 'success',
             'order' => $order
+        ]);
+    }
+
+    public function interest_payments(InterestPaymentsInterface $interestPayments, $order_id){
+        $payouts = $interestPayments->calculate_interest_payments($order_id);
+
+        return response()->json([
+            'payouts' => $payouts
         ]);
     }
 }
