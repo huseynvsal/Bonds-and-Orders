@@ -27,7 +27,7 @@ POST http://localhost:8000/api/bond/order/{order_id}
 Put order id as the number for {order_id} field.
 
 
-### 3. Possible issues
+### Possible issues
 If you are having some problem to access API routes follow these steps:
 
 1. Autoload Classmap
