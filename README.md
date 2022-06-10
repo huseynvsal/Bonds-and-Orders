@@ -44,3 +44,12 @@ php artisan optimize:clear
 ```sh
 php artisan serve --host=127.0.0.1 --port=8080
 ```
+
+# Testing
+
+### Testing the application
+Run this command to execute testing
+```sh
+php artisan test
+```
+All testing classes are in ```tests/Feature``` folder
