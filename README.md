@@ -12,12 +12,11 @@ Route
 ```sh
 POST http://localhost:8000/api/bond/{id}/order
 ```
-For this URL u need to set
+For this URL u need to set key value pair in ```Headers``` like:
 ```sh
 key: Accept 
 value: application/json
 ```
-in the ```Headers```
 Put bond id as the number for {id} field.
 
 ### 3. Interest payments on the bond order
